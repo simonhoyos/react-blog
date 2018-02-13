@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from './Form';
+import PostForm from './PostForm';
 import Posts from './Posts';
 import styled from 'styled-components';
 
@@ -14,7 +14,7 @@ class App extends Component {
       <Container>
         <h1>React blog</h1>
         <h2>Create post: </h2>
-        <Form />
+        <PostForm />
         <h2>Posts: </h2>
         <Posts />
       </Container>
