@@ -8,6 +8,7 @@ const Container = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+  background-color: #eee;
 `;
 
 function getPosts() {

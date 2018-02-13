@@ -9,6 +9,7 @@ const Container = styled.div`
   min-width: 280px;
   padding: 0 20px;
   width: 30%;
+  background-color: #fff;
 `;
 
 const Post = ({ title, body }) => {
