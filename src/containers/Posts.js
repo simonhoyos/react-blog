@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import Post from '../components/Post';
 import styled from 'styled-components';
+import { getPosts } from '../utils/api';
 
 const Container = styled.div`
   display: flex;
@@ -10,10 +10,6 @@ const Container = styled.div`
   width: 100%;
   background-color: #eee;
 `;
-
-function getPosts() {
-  return axios.get('https://jsonplaceholder.typicode.com/posts');
-}
 
 class Posts extends Component {
   constructor(props) {

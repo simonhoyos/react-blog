@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import Input from '../components/Input';
 import TextArea from '../components/TextArea';
 import Button from '../components/Button';
 import Form from '../components/Form';
-
-function postPost({ title, body }) {
-  return axios({
-    method: 'post',
-    url: 'https://jsonplaceholder.typicode.com/posts',
-    data: {
-      title,
-      body,
-    }
-  })
-}
+import { postPost } from '../utils/api';
 
 class PostForm extends Component {
   constructor(props) {
