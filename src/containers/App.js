@@ -21,6 +21,10 @@ class App extends Component {
           <NavBar />
           <Container>
             <Switch>
+              <Redirect
+                from="/home"
+                to="/create"
+              />
               <Route
                 path="/"
                 exact
