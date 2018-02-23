@@ -41,6 +41,7 @@ class Posts extends Component {
       return (
         <Post
           key={id}
+          id={id}
           title={title}
           body={body}
         />

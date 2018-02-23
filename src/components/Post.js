@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -12,11 +13,12 @@ const Container = styled.div`
   background-color: #fff;
 `;
 
-const Post = ({ title, body }) => {
+const Post = ({ title, body, id }) => {
   return (
     <Container>
       <h1>{title}</h1>
       <p>{body}</p>
+      <Link to={`/post/${id}`}>More</Link>
     </Container>
   );
 };

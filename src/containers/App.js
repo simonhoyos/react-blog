@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PostForm from './PostForm';
+import Post from './Post';
 import Posts from './Posts';
 import styled from 'styled-components';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
@@ -29,6 +30,12 @@ class App extends Component {
                 path="/"
                 exact
                 component={Posts}
+              />
+              <Route
+                path="/post/:id"
+                exact
+                strict
+                component={Post}
               />
               <Route
                 path="/create"
